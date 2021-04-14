@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <%- include('partials/head') %>
+</head>
+<body>
+    <%- include('partials/header') %>
+    <main class="main-register main-login">
+        <section>
+            <div class="register">
+                <form action="/" class="formulario" >
+                    <div class="form-control">
+                        <input type="text" name="user" id="user" placeholder="Nombre de usuario" pattern="[A-Za-z]{2,50}" title="Solo Letras y números y debe ser más de una letra" required class="control">
+                        <span class="Feedback"></span>
+                    </div>
+                    <div class="form-control">
+                        <input type="password" name="pass" id="pass" placeholder="Contraseña" class="control" required>
+                    </div>
+                    <div class="form-control buttons">                                        
+                        <input type="submit" value="Enviar" class="submit button-form btn-log">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>

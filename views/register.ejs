@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head') %>
+<body>
+    <%- include('partials/header') %>
+    <main class="main-register">
+        <section>
+            <div class="register">
+                <form action="/" class="formulario" >
+                    <div class="form-control">
+                        <input type="text" name="name" id="name" placeholder="Nombre y apellido" pattern="[A-Za-z]{2,50}"title="Solo Letras y números y debe ser más de una letra" required class="control">
+                        <span class="Feedback"></span>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="user" id="user" placeholder="Nombre de usuario" pattern="[A-Za-z]{2,50}"title="Solo Letras y números y debe ser más de una letra" required class="control">
+                        <span class="Feedback"></span>
+                    </div>
+                    <div class="form-control">                    
+                        <label for="dateBrith">Fecha de Nacimiento:</label>
+                            <input type="date" name="dateBrith" id="dateBrith" class="control">
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="address" id="address" placeholder="Domicilio" pattern="[A-Za-z0-9_-]{2,50}"title="Solo Letras y números y debe ser más de una letra" class="control">
+                    </div>
+                    <div class="form-control">
+                        <label for="profile">Perfil:</label>
+                            <select name="profile" id="profile" class="control">
+                                <option value="purchase">Comprador</option>
+                                <option value="sale">Vendedor</option>
+                            </select>
+                    </div>
+                    <div class="form-control">
+                        <label>Categorías de Interes</label>
+                        <div class="interests">
+                            <div class="interest-option">
+                                <input type="checkbox" name="interests" value="electro" id="electro">
+                                <label for="electro">Electro</label>
+                            </div>
+                            <div class="interest-option">
+                                <input type="checkbox" name="interests" value="fashion" id="fashion">
+                                <label for="fashion">Moda</label>
+                            </div>
+                            <div class="interest-option">
+                                <input type="checkbox" name="interests" value="home" id="home">
+                                <label for="home">Hogar</label>
+                            </div>
+                            <div class="interest-option">
+                                <input type="checkbox" name="interests" value="toys" id="toys">
+                                <label for="toys">Juguetería</label>
+                            </div>
+                            <div class="interest-option">
+                                <input type="checkbox" name="interests" value="healthy" id="healthy">
+                                <label for="healthy">Vida sana</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-control">
+                        <label>Imagen de perfil:</label>
+                        <div class="img">
+                            <img src="" >
+                        </div>
+                        <input type="file" id="fileavatar" name="fileavatar" accept="image/png, image/jpeg" >
+                    </div>                    
+                    <div class="form-control">
+                        <input type="password" name="pass" id="pass" placeholder="Contraseña" class="control" required>
+                    </div>    
+                    <div class="form-control">                    
+                        <input type="password" name="confirmpass" id="confirmpass" placeholder="Confirmar contraseña" class="control" required>
+                    </div>
+                    <div class="form-control buttons">                    
+                        <input type="submit" value="Enviar" class="submit button-form">
+                        <input type="reset" value="Limpiar" class= "button-form" >
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>

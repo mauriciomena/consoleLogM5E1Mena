@@ -1,0 +1,450 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+/* mobile first*/
+/*inicio Body*/
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    background-color: #ebebeb;
+
+}
+    /*incio header*/
+    .main-header{
+        background-color:#EAC926; ;
+        padding:20px;
+        margin:0px;
+        font-size: 1.2em;
+        color:#181818;
+    }
+    .main-header-top-bar .top-bar-logoandsearch{
+        display:flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .logo, .search-bar{
+        width: 50%;
+        padding: 5px;
+    }
+    .search-bar{
+        display:flex;
+        position: relative;
+    }
+    .search-bar .control{
+        flex:1 1 auto;
+        border-radius: 4px;
+        border:none;
+        padding:9px;
+    }
+    .search-bar .button{
+        border:none;
+        background-color: #ffffff;
+        border-radius: 4px;
+        position:absolute;
+        right: 0;
+        height: 80%;
+        align-items: center;
+        padding:6px;
+        flex:1 1 auto;  
+
+    }
+    .copy-header{
+        display: block;
+        font-size: 0.9rem;
+        text-align:center;
+        padding: 15px 0;
+    }
+
+    .burger-menu{
+        background-color: #03264C;
+        color:#ffffff;
+        display:block;
+        max-width:40px;
+        padding: 10px 0;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 18px;
+        margin:auto;
+    }
+    .main-header-bottom-bar{
+        display: none;
+        flex-wrap: wrap;
+    }
+    .main-header-bottom-bar ul {
+       list-style:none;
+       margin:0px;
+       padding:0px;
+    }
+
+    .main-header-bottom-bar a{
+        text-decoration: none;
+        color:#222222;
+    }
+    .main-header-img{
+        width: 100vw;
+        display: block;
+    }
+
+    /*fin header*/
+
+    /* inicio main*/
+
+    .main{
+        /* display: block; */
+        display: flex;
+        flex-flow: column;
+        width: 90%;
+        padding: 10px;
+        margin:auto;
+        background-color:#ebebeb ;
+    }
+        /* Especificaciones del mail del Formualario de Registro*/
+        .main-register{
+            width: 330px;
+            margin:auto;
+            color:#666;
+        }
+
+        /* section */
+
+        main section h3{
+            font-size: 24px;
+            color:#666;
+        }
+            /*Formulario de registro*/
+            .main-register section .register{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                font-size:14px;
+            }
+            .main-register section .register .form-control{
+                margin-top: 15px;
+                display: block;
+            }
+            .main-register section .register .form-control .control{
+                width: 100%;
+                padding: 10px;
+                border:none;
+                border-radius: 5px;
+                font-size: 14px;
+            }
+            .main-register section .register .interests{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                background-color: #ffffff;
+                padding: 5px;
+                border-radius: 12px;
+            }
+            .main-register section .register .interests .interest-option{
+                width: 150px;
+            }
+
+            .main-register section .register .img{
+                margin: auto;
+                border: 2px dotted #ebebeb;
+                background-color: #ffffff;
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+            }
+            .main-register section .register img{
+                width: 250px;
+                height: 250px;
+                position:relative;
+                z-index:-1;
+            }
+            
+            .main-register section .register .buttons{
+                display: flex;
+                justify-content: center;
+            }
+            .main-register section .register .button-form{
+                width:50%;
+                padding:15px; 
+                background-color: #666;
+                color:#ffffff;
+                font-size: 16px;
+                text-align: center;
+                margin: 1px;
+                border:none;
+                border-radius: 15px;
+            }
+            
+            .main-register section .register .submit{
+                background-color: #39b54a;
+                font-weight: bold;
+            }
+            .main-login{
+                padding: 40px 0;
+           }
+
+            /*fin formulario de registro*/
+
+            /* article */
+            main section article {
+                margin-top:15px;
+                background-color: #ffffff;
+            }
+            main section .product {
+                margin-top:10px;
+            }
+
+            .product_img{
+                width:100%;
+
+            }
+            .boxart {
+                display:flex;
+                position:relative;
+                border-top: 1px #ebebeb solid;
+                padding:15px;
+                background-color:#ffffff ;
+                margin:0px;
+                flex-wrap: wrap;
+                flex-flow:column;
+
+            }
+            .boxart .product-value{
+                display: flex;
+            }
+            .price{
+                font-size: 18px;
+                flex: 1 30%;
+
+            }
+            .discount{
+                align-self: center;
+                text-align:center;
+                color:#39b54a;
+                flex:1 1 70%;
+            }
+            main section article h4{
+                flex-grow: 1;
+                font-size:0;                
+                color: #666;
+                margin: 3px 0;
+                font-weight: normal;
+            }
+            /*camioncito*/
+            main section article i {
+                box-sizing: border-box;
+                display: block ;
+                font-size: 16px ;
+                padding: 5px ;
+                width: 30px ;
+                height: 30px ;
+                border: 1px solid #39b54a ;
+                background-color: #FFF ;
+                border-radius: 50% ;
+                position: absolute ;
+                right: 20px ;
+                top: -15px ;
+                color:#39b54a;
+                margin:0;
+                }
+
+
+            /*fin article */
+
+        /* fin section */
+
+    /* Fin main*/
+
+    /*inicio Footer*/
+    footer{
+        width:100vw;
+        background-color:#ffffff ;
+        text-align: center;
+        color:#666;
+        margin-bottom: 0px;
+        font-size: 12px;
+    }
+    footer section h3{
+        font-weight: bold;
+
+    }
+    footer i {
+        margin-top: 20px;
+        margin-bottom: 0px;
+        font-size: 20px;
+        color:#1259c3;
+    }
+    footer h5{
+        margin-top: 50px;
+
+        text-align: left;
+        font-size: 12px;
+    }
+    /*fin Footer*/
+
+
+/*Fin Body*/
+
+
+@media screen and (min-width:361px)  {
+    /*tablets*/
+
+    .main-header-top-bar{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+    .main-header-top-bar .top-bar-logoandsearch{
+        width: 66%;
+    }
+    .main-header-top-bar .search-bar{
+        height: 50%;
+        align-self:center;
+    }
+    .main-header-top-bar #searchterm{
+        width: 94%;
+    }
+    .main-header-top-bar button{
+        height: 60%;
+        border: 0.5px solid #666;
+    }
+    .copy-header{
+        text-align:right;
+        font-size: 9px;
+        width: 33%;
+    }
+    .burger-menu{
+        display:none;
+    }
+    .main-header-bottom-bar{
+        display:flex;
+        flex-grow:1;
+        justify-content:space-between;
+        align-items:center;
+        padding-top:15px;
+    }
+    .main-header-bottom-bar ul{
+        display: flex;
+        flex-grow:1;
+        font-size: 9px;
+    }
+    .main-header-bottom-bar .right-menu{
+        justify-content: flex-end;
+    }
+
+    .main-header-bottom-bar li{
+        margin:5px;
+    }
+    main section .product{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    main section article{
+        flex: 1 1 40%;
+        margin: 5px 5px;
+    }
+
+    /* main section article h4 { se pone visible en el evento :hover solo para desktop
+        display: block;
+        font-size: 12px;
+    } */
+
+    main section article .product_img{
+      width:100%;
+    }
+
+}
+
+@media screen and (min-width: 769px){
+
+    .main-header-top-bar, .main-header-bottom-bar{
+        margin:auto;
+        
+    }
+    .main-header-bottom-bar li{
+        margin: 0 10px;
+    }
+    .main-header-bottom-bar a{
+        font-size: 12px;
+        margin-top:50px;
+    }
+    .main-header-top-bar {
+        align-items: center;
+    }
+
+    .copy-header{
+        max-width:none;
+        margin: 0px;
+        font-size: 12px;
+    }
+    .logo{
+        width: 250px;
+    }
+    main section article .boxart{
+        padding:10px;
+    }
+    main section article{
+        flex: 1 1 20%;
+        margin: 5px 15px;
+        transition: all 300ms;
+      }
+      main section article:hover{
+          box-shadow: 0px 0px 10px #646464;
+      }
+
+     main section article h4{
+         transition: all 300ms;
+     }
+      main section article:hover h4 { 
+        margin-top:15px;
+        font-size: 12px;
+    }   
+
+      main section article i{
+          font-size: 11px;
+          padding: 3px;
+          width: 20px;
+          height: 20px;
+      }
+       /* Especificaciones del mail del Formualario de Registro*/
+       .main-login{
+            padding: 100px 0;
+       }
+
+       .main-register{
+        width: 700px; 
+        }
+        .main-register section .register .form-control .control{
+            padding:15px;
+        }
+        .main-register section .register .form-control .btn-log{
+            transition: all 250ms;
+        }
+        .main-register section .register .form-control .btn-log:hover{
+            background-color:#0022AA ;
+        }
+        /*  el Footer se tiene poner horizonal  */
+        footer {
+            display:flex ;
+            flex-wrap: wrap;
+        }
+        footer section {
+            width: 30%;
+            height: auto;
+            font-size: 10px;
+            flex: 1 1 auto;
+            padding:20px;
+        }
+        footer section article i{
+            font-size: 30px;
+            transition: all 200ms;
+        }
+        footer section article i:hover{
+            color:#39b54a;
+        }
+
+}
+
